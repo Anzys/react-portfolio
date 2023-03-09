@@ -1,10 +1,10 @@
 import React from "react";
 import pp from "../assets/img/pp.png";
-
+import { Layout } from "./Layout";
 import resume from "../assets/Anjish+Gurung+Resume.docx";
 const Hero = () => {
   return (
-    <div>
+    <Layout>
       <section className="section1 grid">
         <div className="left flex">
           <img className="img" src={pp} alt="" />
@@ -61,7 +61,7 @@ const Hero = () => {
           </div>
         </section>
       </>
-    </div>
+    </Layout>
   );
 };
 

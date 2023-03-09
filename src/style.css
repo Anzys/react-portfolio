@@ -288,11 +288,14 @@ section {
   cursor: pointer;
   flex-direction: column;
   box-shadow: 0 4px 12px 4px;
-  background-image: cover cover no-repeat center;
+  overflow: hidden;
 }
 .section4 .projects-container .project-card .top .img {
   width: 100%;
   height: 250px;
+  background-image: cover;
+  overflow: hidden;
+  object-fit: cover;
 }
 .section4 .projects-container .project-card .bottom {
   margin-top: 1.2rem;
@@ -507,7 +510,7 @@ footer .footer-container .footer-bottom {
   cursor: pointer;
 }
 .scroll-to-top .scroll-btn {
-  font-size: 10rem;
+  font-size: 4rem;
   border-radius: 50%;
   position: absolute;
   left: 50%;

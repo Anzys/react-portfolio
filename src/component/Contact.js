@@ -1,8 +1,9 @@
 import React from "react";
 
+import { Layout } from "./Layout";
 const Contact = () => {
   return (
-    <div>
+    <Layout>
       <section className="section6 flex" id="Contact">
         <h1 className="title">Get In Touch</h1>
         <div className="socials flex">
@@ -23,7 +24,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 

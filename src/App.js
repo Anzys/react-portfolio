@@ -9,18 +9,18 @@ import Hero from "./component/Hero";
 import Projects from "./component/Projects";
 import Skills from "./component/Skills";
 import "./style.css";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Skills />
-
-      <Projects />
-      <AboutMe />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Hero />}></Route>
+        <Route path="skills" element={<Skills />}></Route>
+        <Route path="projects" element={<Projects />}></Route>
+        <Route path="about-me" element={<AboutMe />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
+      </Routes>
     </>
   );
 }

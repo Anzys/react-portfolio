@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,24 +13,24 @@ const Header = () => {
         </div>
         <div className="right">
           <input type="checkbox" id="checked" />
-          <label for="checked" className="menu-icon">
+          <label htmlFor="checked" className="menu-icon">
             <i className="fa-solid fa-bars"></i>
           </label>
           <ul className="navigation flex">
             <li>
-              <a href="#">HOME</a>
+              <Link to="/">HOME</Link>
             </li>
             <li>
-              <a href="#Skills">SKILLS</a>
+              <Link to="/skills">SKILLS</Link>
             </li>
             <li>
-              <a href="#Projects">PROJECTS</a>
+              <Link to="/projects">PROJECTS</Link>
             </li>
             <li>
-              <a href="#About">ABOUT</a>
+              <Link to="/about-me">ABOUT</Link>
             </li>
             <li>
-              <a href="#Contact">CONTACT</a>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
